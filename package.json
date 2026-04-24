@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "sql.js": "^1.8.0",
-    "chart.js": "^4.4.0"
+    "chart.js": "^4.4.4",
+    "sortablejs": "^1.15.0"
   }
 }

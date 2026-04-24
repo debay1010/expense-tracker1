@@ -9,3 +9,128 @@ body {
   margin: 0 auto;
   padding: 20px;
 }
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+nav {
+  margin-bottom: 20px;
+}
+
+nav button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+  border: none;
+  cursor: pointer;
+}
+
+nav button:hover {
+  background-color: #e0e0e0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+section {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+form input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+#expense-list {
+  list-style: none;
+  padding: 0;
+}
+
+#expense-list li {
+  padding: 10px;
+  background-color: white;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.hidden {
+  display: none;
+}
+
+/* Kanban Board Styles */
+#kanban-board {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 20px 0;
+}
+
+.kanban-column {
+  flex: 1;
+  min-width: 300px;
+  background-color: #e8e8e8;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+.kanban-column h3 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.kanban-cards {
+  min-height: 400px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+}
+
+.kanban-card {
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  cursor: move;
+}
+
+.kanban-card:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+@media (max-width: 768px) {
+  #kanban-board {
+    flex-direction: column;
+  }
+  .kanban-column {
+    min-width: auto;
+  }
+}

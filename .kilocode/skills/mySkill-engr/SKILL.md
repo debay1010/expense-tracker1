@@ -1,6 +1,6 @@
 # Skill: OpenSpec Engineer (Spec-Driven Agentic Workflow)
 
-**Description**: Creates or updates a feature specification (`spec.md`) following OpenSpec SDD practices, incorporating User Stories ("Human Intent"), technical requirements, and mapping to tasks.md. Uses /opsx commands and kilo code modes.
+**Description**: Creates or updates a feature specification (`spec.md`), proposal (`proposal.md`) and design (`design.md`) following OpenSpec SDD practices, incorporating User Stories ("Human Intent"), technical requirements, and mapping to tasks.md. Uses /opsx commands and kilo code modes.
 
 **Keywords**: #openspec #sdd #agentic #spec-driven #user-stories
 
@@ -16,6 +16,8 @@ When the user asks to "start a feature" or "define a feature" ($ARGUMENTS):
 ### 2. Spec Generation (Using Template)
 - **Locate the template**: Use the contents of `.kilocode/templates/spec-template.md`.
 - **Generate `spec.md`**: Inside `openspec/changes/<feat>/specs/spec.md`, draft the spec following the template structure.
+- **Generate `proposal.md`**: Inside `openspec/changes/<feat>/proposal/proposal.md`
+- **Generate `design.md`**: Inside `openspec/changes/<feat>/design/design.md`
 - **Hierarchical Requirement -> User Story Mapping**:
     - For every **FR-xxx** (Functional Requirement), create a corresponding **User Story** in the *User Scenarios* section.
     - Ensure User Stories focus on "Human Intent" (What, Why, and User Experience).
